@@ -1,0 +1,114 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chu</title>
+    <style>
+        *{padding: 0px; margin: auto;}
+        .wrapper{ width: 1089px; height: 800px; background-color: antiquewhite; border: double red;}
+        header{ width: 1089px; height:150px; background-color: rgb(238, 73, 188); text-align: center;}
+        nav{ width: 1089px; height: 50px; background-color: rgb(222, 140, 233);}
+        .content{ width: 1089px; height: 500px; background-color: rgb(0, 0, 0); }
+        footer{ width: 1089px; height: 100px; background-color: rgb(107, 20, 110); }
+        aside{ width: 35%; height: 100%; background-color: rgb(223, 105, 160); float: left;}
+        section{ width: 65%; height:100%; background-color: rgb(211, 9, 9);float: left;}
+        .menu li{ width: 150px; float: left; line-height: 50px; list-style: none; text-indent: 10px; background-color:rgb(222, 140, 233);position: relative;  }
+        li a{text-decoration: none; font-weight: bold; color:blue;}
+        li:hover{ background-color: blue;}
+        li:hover>a{ color: yellow;font-style: italic;}
+        li .sub-menu{display: none; position: absolute;}
+        li:hover>.sub-menu{display: block;}
+        li .sub-menu li:hover>.sub-menu{top: 0px; left: 150px;} 
+        #contact{
+            border: dotted black;
+            margin-top: 100px;
+            width: 50%;
+            padding: 10px;
+            background-color: aliceblue;
+        }
+        .search{
+            float: left;
+            margin-top: 15px;
+        }
+        .search button{
+            border-radius: 20%;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="wrapper">
+        <header>
+            <h2>Nguyễn Như Phi Yến</h2>
+            <h2>19507041</h2>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li> <a href="#">HOME</a></li>
+                <li> <a href="#">SERVICES</a>
+                    <ul class="sub-menu">
+                        <li><a href="">COMPUTER</a></li>
+                        <li><a href="">ADSL</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">5G</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">LTE</a></li>
+                                <li><a href="#">LTE</a></li>
+                            </ul>
+                            </li>
+                            <li><a href="#">4G</a></li>
+                            <li><a href="#">3G</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="">MOBI PHONE</a></li>
+                    </ul>
+                </li>
+                <li> <a href="#">CONTACT</a></li>
+                <li> <a href="#">ABOUT</a></li>
+                <li> <a href="#">HELP</a></li>
+
+            </ul>
+            <div class="search">
+                <form action="#" method="get">
+                    <input type="text" placeholder="Search">
+                    <button>Go</button>
+                </form>
+            </div>
+        </nav>
+        <div class="content">
+            <aside>
+
+            </aside>
+            <section>
+                <form id="contact">
+                    <label>
+                        <h2>
+                            Form Contact
+                        </h2>
+                    </label>
+                    <p>
+                        <label>Họ Tên</label>
+                        <input type="text"placeholder="Nhập họ tên">
+                    </p>
+                    <p>
+                        <label>Tuổi</label>
+                        <input type="number" placeholder="Nhập tuổi">
+                    </p>
+                    <p>
+                        <label>giới tính</label>
+                        <input type="radio">Nam
+                        <input type="radio">Nữ
+                    </p>
+                    <button type="submit">Confirm</button>
+                    <button type="reset">Delete</button>
+                </form>
+            </section>
+            
+        </div>
+        <footer>
+
+        </footer>
+    </div>
+ </body>
+ </html>
